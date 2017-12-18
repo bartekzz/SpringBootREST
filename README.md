@@ -8,8 +8,8 @@ A REST Api to store and retrieve user information.
 **Technology** . 
 	•	Spring Boot   
 	•	Spring Security (BCryptPasswordEncoder)  
-	•	Java Persistence API  
-	•	MYSQL Database  
+	•	Java Persistence API (JpaRepository)  
+	•	MYSQL Database  
 
 **Usage**  
 	•	Run the application and go on `http://localhost:8080/`  
