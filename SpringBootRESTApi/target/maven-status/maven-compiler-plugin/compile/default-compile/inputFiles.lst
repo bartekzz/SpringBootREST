@@ -1,0 +1,12 @@
+/Users/bartek/Github/Jensen/JavaEEProject/SpringBootREST/src/main/java/com/bartek/dao/UserRepository.java
+/Users/bartek/Github/Jensen/JavaEEProject/SpringBootREST/src/main/java/com/bartek/dao/UserDao.java
+/Users/bartek/Github/Jensen/JavaEEProject/SpringBootREST/src/main/java/com/bartek/config/JacksonConfiguration.java
+/Users/bartek/Github/Jensen/JavaEEProject/SpringBootREST/src/main/java/com/bartek/apikey/RandomAESKeyGen.java
+/Users/bartek/Github/Jensen/JavaEEProject/SpringBootREST/src/main/java/com/bartek/entity/User.java
+/Users/bartek/Github/Jensen/JavaEEProject/SpringBootREST/src/main/java/com/bartek/dao/UserDaoImpl.java
+/Users/bartek/Github/Jensen/JavaEEProject/SpringBootREST/src/main/java/com/bartek/service/UserService.java
+/Users/bartek/Github/Jensen/JavaEEProject/SpringBootREST/src/main/java/com/bartek/exception/UserExistsException.java
+/Users/bartek/Github/Jensen/JavaEEProject/SpringBootREST/src/main/java/com/bartek/Application.java
+/Users/bartek/Github/Jensen/JavaEEProject/SpringBootREST/src/main/java/com/bartek/dao/MongoDaoImpl.java
+/Users/bartek/Github/Jensen/JavaEEProject/SpringBootREST/src/main/java/com/bartek/controller/UserController.java
+/Users/bartek/Github/Jensen/JavaEEProject/SpringBootREST/src/main/java/com/bartek/config/SecurityConfig.java

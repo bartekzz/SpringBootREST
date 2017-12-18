@@ -1,0 +1,6 @@
+com/bartek/controller/IndexController.class
+com/bartek/Application.class
+com/bartek/controller/AngularController.class
+com/bartek/service/RestService.class
+com/bartek/model/User.class
+com/bartek/service/RestConfig.class

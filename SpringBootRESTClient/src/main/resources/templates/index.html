@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>REST Api Client</title>
+    <link th:if="${mode == 'development'}" rel="stylesheet" href="../static/bootstrap.css" th:href="@{/bootstrap.css}" />
+    <link th:if="${mode == 'production'}" rel="stylesheet" href="../static/bootstrap.min.css" th:href="@{/bootstrap.min.css}" />
+    <script type="text/javascript" src="/static/angular.min.js" th:src="@{/angular.min.js}"></script>
+    <script type="text/javascript" src="/static/app/app.module.js" th:src="@{/app/app.module.js}"></script>
+    <script type="text/javascript" src="/static/app/users.controller.js" th:src="@{/app/users.controller.js}"></script>
+</head>
+<body ng-app="app" ng-controller="AngularController as vm">
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <h1>REST Api Client App</h1>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div>
+    <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+            <div class="btn-group" role="group">
+                <button ng-click="vm.getAllUsers()" type="button" class="btn btn-default">Show All</button>
+                <button ng-click="vm.getAllUsersByEmail(emailInput)" type="button" class="btn btn-default">Show By Email</button>
+                <input name="emailInput" ng-model="emailInput" />
+            </div>
+
+            <!-- Display bookings in a table -->
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Key</th>
+                    <th style="width: 90px"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <button class="" ng-click="vm.addNew()">Add New</button>
+                <tr ng-repeat="user in vm.users">
+                    <td>{{user.id}}</td>
+                    <td><input name="userName{{$index}}" ng-model="user.name"  ng-disabled="vm.isDisabled[$index]"/></td>
+                    <td><input name="userEmail{{$index}}" ng-model="user.email"  ng-disabled="vm.isDisabled[$index]"/></td>
+                    <td><input name="userEmail{{$index}}" ng-model="user.password"  ng-disabled="vm.isDisabled[$index]"/></td>
+                    <td><input name="userEmail{{$index}}" ng-model="user.key"  ng-disabled="vm.isDisabled[$index]"/></td>
+                    <td>
+                        <button class="toggle" ng-model="vm.buttonLabel[$index]" ng-click="vm.toggle($index, user)">{{vm.buttonLabel[$index]}}</button>
+                        <button class="btn btn-danger" ng-click="vm.deleteUserById(user.id)">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<footer class="footer" style="position: absolute; bottom:0;background-color: #f5f5f5; width: 100%">
+</footer>
+</body>
+</html>
