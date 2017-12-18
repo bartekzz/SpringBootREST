@@ -4,8 +4,8 @@ A REST Api based on Spring Boot, JPA, MYSQL and a Client web based GUI built on 
 ## SpringBootRESTApi ##
 
 A REST Api to store and retrieve user information.  
-
-**Technology** . 
+  
+**Technology**  
 	•	Spring Boot   
 	•	Spring Security (BCryptPasswordEncoder)  
 	•	Java Persistence API (JpaRepository)  
